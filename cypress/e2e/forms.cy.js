@@ -25,6 +25,8 @@ describe('Forms, Buttons & Checkbox', () => {
         cy.wait(2000)
         cy.get('[data-cy="message"]').type (message)
         cy.wait(2000)
+
+        //Assert form Details
         cy.get('[class="custom_btn btn_hover"]')
             .should('contain', 'Submit')
             .and ('be.visible')
