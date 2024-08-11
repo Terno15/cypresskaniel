@@ -29,8 +29,6 @@ describe('Forms, Buttons & Checkbox', () => {
             .should('contain', 'Submit')
             .and ('be.visible')
             .click()
-       //Assert Form Details
-       
     })
       
   })
