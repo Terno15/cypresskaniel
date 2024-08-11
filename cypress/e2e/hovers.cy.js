@@ -1,0 +1,20 @@
+/// <reference types="Cypress" />
+describe('Cypress Hovers', () => {
+    it('Open and check hover', ()=> {
+        cy.visit('https://practice-automation.com/hover/')
+        cy.contains('Hover')
+            .should('be.visible')
+        cy.get('.entry-content')
+            .find('p')
+        cy.wait(1000)
+        cy.get('#mouse_over')
+            .trigger('mouseover')
+            .should('contain', 'You did it!')
+            .screenshot()
+        //cy.get('p').screenshot()
+        //.url().should('be.visible')
+        //cy.url().should('eq', 'https://www.youtube.com/watch?v=vnAtR92aaTE')
+        //cy.url().should('include', 'https://www.youtube.com/')
+        //cy.contains('select a submenu item').click()
+    })
+})
