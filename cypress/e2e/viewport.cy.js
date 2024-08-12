@@ -1,3 +1,4 @@
+/// <reference types="Cypress" />
 describe('Cypress hover', () => {
   it('Lets tests hover workaround', () => {
     cy.viewport('macbook-15') // Set viewport to 550px x 750px
