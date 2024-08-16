@@ -8,5 +8,6 @@ describe('Screenshots', () => {
   it('Screenshot one element', () => {
     cy.visit('https://example.com/')
     cy.get('h1').screenshot('Only h1 element', {overwrite : true})
+    cy.get('h1').should('have.length', 1)
   })
 })
