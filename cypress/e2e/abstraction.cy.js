@@ -1,7 +1,11 @@
 /// <reference types="Cypress" />
+
+import ExamplePage from '../Pages/ExamplePage'
+
 describe('Cypress E2E Testing Demo', () => {
  beforeEach(() =>{
-  cy.visit('https://example.com/')
+  const examplePage = new ExamplePage()
+  examplePage.openExemplePage()
  })
 
  afterEach(() =>{
@@ -9,11 +13,13 @@ describe('Cypress E2E Testing Demo', () => {
  })
 
  it('Assert Url', ()=>{
-  cy.url().should('contain', 'example.com')
+  const toto = new ExamplePage()
+  toto.assertUrl()
  })
 
  it('Assert Title', () => {
-  cy.title().should('contain', 'Example Domain')
+  const AssertTitle = new ExamplePage()
+  AssertTitle.assertTitle()
  })
 
  it('Assert Element', () =>{
