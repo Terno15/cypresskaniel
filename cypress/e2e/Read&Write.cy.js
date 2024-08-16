@@ -10,10 +10,8 @@ describe('Cypress files', () => {
         expect(user.email).to.equal('toto@gmail.com')
       })
     })
-      it('Write into plain text file', () =>{
+      it('Ecrire dans un texte vide', () =>{
         cy.writeFile('test-data/plain.txt', 'Hello world Cypress Community', 'ascii')
       
-      })
-      
-      
+      }) 
   })
