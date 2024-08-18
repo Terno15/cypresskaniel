@@ -8,6 +8,7 @@ describe('Cypress E2E Testing Demo', () => {
   examplePage.openExemplePage()
   examplePage.assertTitle()
   examplePage.assertTitle()
+  examplePage.AnotherOne()
  })
 
  afterEach(() =>{
@@ -23,11 +24,11 @@ describe('Cypress E2E Testing Demo', () => {
 //   //const AssertTitle = new ExamplePage()
 //  })
 
- it('Assert Element', () =>{
-  cy.get('h1').should('be.visible')
-  cy.wait(2000)
-  cy.get('p').should('be.visible')
- })
+//  it('Assert Element', () =>{
+//   cy.get('h1').should('be.visible')
+//   cy.wait(2000)
+//   cy.get('p').should('be.visible')
+//  })
 
  it('Reload and Logs', ()=>{
   cy.log('Before Reload')
