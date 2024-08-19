@@ -13,7 +13,7 @@ class ExamplePage{
 
     AnotherOne(){
         cy.get('h1').should('be.visible')
-        cy.wait(2000)
+        cy.wait(1000)
         cy.get('p').should('be.visible')
     }
 
