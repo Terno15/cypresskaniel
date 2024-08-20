@@ -9,7 +9,7 @@ describe('Cypress Clearing Inputs', () => {
     cy.getById('username').type('Thierno')
     cy.getById('password').type('password')
     cy.getByClass('radius').contains('Login').should('be.visible').click()
-    cy.contains('Your username is invalid!').should('be.visible') //tomsmith//SuperSecretPassword!
+    cy.contains('Your username is invalid!').should('be.visible')
     cy.wait(1000)
     cy.getById('username').clear()
     cy.get('#username').type('tomsmith')
@@ -18,6 +18,10 @@ describe('Cypress Clearing Inputs', () => {
     cy.contains('Login').click()
     cy.getByClass('radius').contains('Login').should('be.visible').click()
     cy.contains('You logged into a secure area!').should('be.visible')
+    cy.getByClass('example').find('h2').should('contain', 'Secure Area')
+    cy.get('h4.subheader')
+            .contains('Welcome to the Secure Area. When you are done click logout below.')
+            .should('be.visible')
     
   })
 })
