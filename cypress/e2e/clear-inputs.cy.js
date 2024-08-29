@@ -1,5 +1,5 @@
 /// <reference types="Cypress" />
-describe('Cypress Clearing Inputs', () => {
+describe('Cypress clearing Inputs', () => {
   it('Type and Clear', () => {
     cy.visit('https://the-internet.herokuapp.com/login')
     cy.get('#username').type('12345678910')
@@ -17,7 +17,9 @@ describe('Cypress Clearing Inputs', () => {
     cy.getById('password').type('SuperSecretPassword!')
     cy.contains('Login').click()
     cy.getByClass('radius').contains('Login').should('be.visible').click()
-    cy.contains('You logged into a secure area!').should('be.visible')
+    cy.contains('You logged into a secure area!')
+           .should('have.css', 'background-color', 'rgb(93, 164, 35)')
+           //.should('have.css', 'background-color', '#5da423') //rgb(93, 164, 35)
     cy.getByClass('example').find('h2').should('contain', 'Secure Area')
     cy.get('h4.subheader')
             .contains('Welcome to the Secure Area. When you are done click logout below.')
