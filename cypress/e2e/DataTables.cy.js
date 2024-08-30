@@ -18,6 +18,8 @@ describe('DATA TABLES', () => {
             .and('contain', '$1.25')
     cy.get('tr').eq(1).should('contain', 'Oranges')
     cy.get('tr').eq(2).should('contain', 'Laptop')
+    cy.get('tr').eq(1).should('contain', '$3.99')
+    cy.get('tr').eq(2).should('contain', '$1')
     })
   })
 })
