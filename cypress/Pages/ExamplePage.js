@@ -1,10 +1,10 @@
 class ExamplePage{
     openExemplePage(){
-        cy.visit('https://example.com:')
+        cy.visit('/')
     }
-
     assertUrl(){
-        cy.url().should('contain', 'example.com')
+        const baseUrl = Cypress.config('baseUrl')
+        cy.url().should('contain', `${baseUrl}`)
     }
 
     assertTitle(){

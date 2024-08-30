@@ -1,4 +1,4 @@
-/// <reference types="Cypress" />
+/// <reference types="cypress" />
 describe('template spec', () => {
     beforeEach(() => {
         cy.visit('https://example.com/')

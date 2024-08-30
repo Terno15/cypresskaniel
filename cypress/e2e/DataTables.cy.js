@@ -21,5 +21,8 @@ describe('DATA TABLES', () => {
     cy.get('tr').eq(1).should('contain', '$3.99')
     cy.get('tr').eq(2).should('contain', '$1')
     })
+
+    cy.get('h4').contains('Sortable Table')
+    cy.get('select').select('100') // Select 100 option
   })
 })

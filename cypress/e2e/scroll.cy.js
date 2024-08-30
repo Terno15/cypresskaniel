@@ -1,4 +1,4 @@
-/// <reference types="Cypress" />
+/// <reference types="cypress" />
 describe('Scroll in cypress', () => {
   it('Scrolling into footer view', () => {
     cy.visit('https://practice-automation.com/')

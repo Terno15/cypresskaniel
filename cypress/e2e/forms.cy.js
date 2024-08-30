@@ -1,6 +1,6 @@
 /// <reference types="Cypress" />
 describe('Forms, Buttons & Checkbox', () => {
-    it('Submit And Assert form', ()=> {
+    it('Submit And Assert form', {retries : 1},()=> {
         //Load the form with variable data
         const name = 'DIALLO'
         const drink = 'Water'

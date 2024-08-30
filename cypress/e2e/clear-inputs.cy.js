@@ -1,4 +1,4 @@
-/// <reference types="Cypress" />
+/// <reference types="cypress" />
 describe('Cypress clearing Inputs', () => {
   it('Type and Clear', () => {
     cy.visit('https://the-internet.herokuapp.com/login')

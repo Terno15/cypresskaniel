@@ -1,4 +1,4 @@
-/// <reference types="Cypress" />
+/// <reference types="cypress" />
 
 import ExamplePage from '../Pages/ExamplePage'
 
