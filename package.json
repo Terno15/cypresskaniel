@@ -6,7 +6,8 @@
   "scripts": {
     "test": "cypress run --spec 'cypress/e2e/hovers.cy.js' --reporter json",
     "test:headed": "cypress run --spec 'cypress/e2e/hovers.cy.js' --reporter json  --headed",
-    "thierno": "cypress open"
+    "thierno": "cypress open",
+    "Invok":"cypress run --spec 'cypress/e2e/Invok.cy.js' --reporter json"
   },
   "keywords": [],
   "author": "",
