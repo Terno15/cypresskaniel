@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "cypress run --spec 'cypress/e2e/hovers.cy.js' --reporter json",
+    "test:headed": "cypress run --spec 'cypress/e2e/hovers.cy.js' --reporter json  --headed",
+    "thierno": "cypress open"
   },
   "keywords": [],
   "author": "",
@@ -12,5 +14,8 @@
   "dependencies": {
     "cypress": "^13.13.2",
     "prettier": "^3.3.3"
+  },
+  "devDependencies": {
+    "cypress-mochawesome-reporter": "^3.8.2"
   }
 }
