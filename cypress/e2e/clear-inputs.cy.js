@@ -1,4 +1,4 @@
-/// <reference types="cypress" />
+/// <reference types="Cypress" />
 describe('Cypress clearing Inputs', () => {
   it('Type and Clear', () => {
     cy.visit('https://the-internet.herokuapp.com/login')
@@ -24,6 +24,5 @@ describe('Cypress clearing Inputs', () => {
     cy.get('h4.subheader')
             .contains('Welcome to the Secure Area. When you are done click logout below.')
             .should('be.visible')
-    
   })
 })
